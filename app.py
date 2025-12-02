@@ -1,4 +1,3 @@
-app_py_content = """
 import streamlit as st
 import pandas as pd
 import pickle
@@ -31,10 +30,3 @@ if st.button('Prediksi Health Score'):
         st.write(f"Health Score Anda diprediksi: **{prediction[0]:.2f}**")
     except Exception as e:
         st.error(f"Terjadi error saat prediksi: {e}")
-
-"""
-
-with open('app.py', 'w') as f:
-    f.write(app_py_content)
-
-print("app.py created successfully.")
